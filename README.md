@@ -1,5 +1,5 @@
 # mlLogger
-An attempt to organise my data science projects.
+A commandline attempt to organise my data science projects.
 
 # Installation
 
