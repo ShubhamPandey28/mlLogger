@@ -8,7 +8,7 @@ config = dict()
 config_present = True
 
 try:
-    config = json.loads(open('/home/mlLogger-config.json').read())
+    config = json.loads(open(os.environ['HOME']+'/mlLogger-config.json').read())
 
 except FileNotFoundError:
     print('Install Mysql plugins : ')
@@ -38,8 +38,4 @@ except connector.Error as err:
     else:
         print(f'Ended with error code : {err.errno}')
         raise err
-
-
-
-
 

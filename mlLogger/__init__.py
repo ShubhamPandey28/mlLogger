@@ -1,9 +1,9 @@
 from mlLogger.cli import *
 from mlLogger.db import *
-
+import os
 
 if not config_present:
-    config_path = '/home/mlLogger-config.json'
+    config_path = os.environ['HOME']+'/mlLogger-config.json'
     with open(config_path, 'w') as f:
         json.dump(config, f, indent=4)
 
