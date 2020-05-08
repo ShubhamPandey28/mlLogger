@@ -1,9 +1,9 @@
-from cli import *
-from db import *
+from mlLogger.cli import *
+from mlLogger.db import *
+
 
 if not config_present:
-    print(os.path.dirname(__file__))
-    config_path = os.path.join(os.path.dirname(__file__),'db/config.json')
+    config_path = '/home/mlLogger-config.json'
     with open(config_path, 'w') as f:
         json.dump(config, f, indent=4)
 

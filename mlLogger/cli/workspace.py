@@ -1,12 +1,12 @@
-from .base import base, requirements
+from .base import base
 import click
 import os
 import shutil
 import json
 import subprocess
 
-from db import  cursor, connection
-from cli.exceptions import WorkspaceExists, WorkspaceDoesNotExists
+from mlLogger.db import  cursor, connection
+from mlLogger.cli.exceptions import WorkspaceExists, WorkspaceDoesNotExists
 
 
 def ws_exists(ws_name):

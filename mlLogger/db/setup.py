@@ -8,7 +8,7 @@ config = dict()
 config_present = True
 
 try:
-    config = json.loads(open(os.path.join(os.path.dirname(__file__),'config.json')).read())
+    config = json.loads(open('/home/mlLogger-config.json').read())
 
 except FileNotFoundError:
     print('Install Mysql plugins : ')

@@ -1,4 +1,6 @@
 .vscode
 __pycache__
+mlLogger.egg-info
 config.json
-
+dist
+build
