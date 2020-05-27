@@ -13,7 +13,7 @@ Go to the cloned directory
 
 Run
 
-```sudo python3 setup.py install```
+```python3 setup.py install```
 
 # Note 
 
